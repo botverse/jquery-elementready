@@ -30,7 +30,7 @@
     , check_elements_callbacks = {}
       ;
 
-  $(document).bind('DOMNodeInserted', function (event) {
+  $(document).on('DOMNodeInserted', function (event) {
     var index = _.indexOf(check_elements, event.target);
     // we are waiting for the element to get ready
     if (index !== -1) {
